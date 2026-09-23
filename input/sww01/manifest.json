@@ -1,0 +1,809 @@
+{
+  "schema_version": 1,
+  "generator_version": 1,
+  "master_seed": "0x4e50555f41565331",
+  "dataset_kind": "synthetic",
+  "source_dataset": null,
+  "derived_from_official_samples": false,
+  "design_basis": "input shapes and dtypes in this repository plus AVS stress patterns",
+  "workload": "sww01",
+  "summary": {
+    "file_count": 41,
+    "groups": {
+      "smoke": 8,
+      "stress": 32,
+      "stress_stream": 1
+    }
+  },
+  "files": [
+    {
+      "path": "sww01/smoke/00_zero.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "zero",
+      "seed": "0xd1ad4dc4ed372974",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "655a3ef0465a9f30fddf25f4dde0c19a05c6f9069b83961800c1944165955273"
+    },
+    {
+      "path": "sww01/smoke/01_minimum.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "minimum",
+      "seed": "0xd1ad4dc4ed372ab4",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "7a79fb2433ddc3295776027d2534543dfb0bc2653bd56b63b74dfe4921337c67"
+    },
+    {
+      "path": "sww01/smoke/02_maximum.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "maximum",
+      "seed": "0xd1ad4dc4ed3729f0",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "c5a2ad4b32c2852d7cf588ebd5381dd9e1209563bea8221f60f4cff091c4398a"
+    },
+    {
+      "path": "sww01/smoke/03_gradient.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "gradient",
+      "seed": "0xd1ad4dc4ed372930",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "9fad2e88fbc04d908cefc6500123544db433897f1bf79af4ad8e80e2749b2f27"
+    },
+    {
+      "path": "sww01/smoke/04_checker.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "checker",
+      "seed": "0xd1ad4dc4ed372877",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "0d6dc933c61f9d332ec43bbb76856bc1f1baa23abf54e617f322b95e2011f8bf"
+    },
+    {
+      "path": "sww01/smoke/05_impulse.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "impulse",
+      "seed": "0xd1ad4dc4ed3729b5",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "c2f922dc0fae90589a8f2b4579452b229e392d5c592c3ea1e291197af52f2b5b"
+    },
+    {
+      "path": "sww01/smoke/06_low_random.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4ed3728f7",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "a56e8424b36fa289185b07ccb2cdc03a3fb3ea525efce6ac2b533f8845ecb3ea"
+    },
+    {
+      "path": "sww01/smoke/07_dense_random.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4ed372839",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "25518006bfefe89fbbe89725c78ee366a9845a6ce327b0225f5f1864bdf9684b"
+    },
+    {
+      "path": "sww01/stress/stream_features_256x40_int8.bin",
+      "workload": "sww01",
+      "group": "stress_stream",
+      "pattern": "four_64_frame_segments",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        256,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 10240,
+      "sha256": "6e3cbc09645c15d60d3d12706e6e864fe8e937d6cbe909121ceeefc081c7fc2a",
+      "source": {
+        "segments": [
+          "low_random",
+          "banded",
+          "pulsed",
+          "dense_random"
+        ],
+        "segment_seeds": [
+          "0xd1ad4dc4ed378e5b",
+          "0xd1ad4dc4ed378a91",
+          "0xd1ad4dc4ed378ad0",
+          "0xd1ad4dc4ed378b13"
+        ]
+      }
+    },
+    {
+      "path": "sww01/stress/windows/00_frame_000.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "999ad816ede38b8439b405bb4edd2669612e1df882b94167166ed4421b7dbb71",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 0,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/01_frame_007.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "85a9605969f5f1a3a870a1c914301e051a2362993b5e6cf03d552ee8917d8bcc",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 7,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/02_frame_015.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "4ec783e622d9246663f6741ba32b7546fb149f8861ef2a55588473275d428bdb",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 15,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/03_frame_022.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "df0830223d760d6a8e3c95d5d9c457514b50f3a91ed218903dd7f2d9a591bbb4",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 22,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/04_frame_029.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "fed583ef94aca299b034bc1bd89b201445c1df107a39c2d2a08bcec2bdf45cd6",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 29,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/05_frame_036.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "399eb2e10019eea2a5e423e6040ab750c63cd8c79385080d91b694095f287a8d",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 36,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/06_frame_044.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "e26b639e2b4c89737cebe274f0916747bf699b8462f072518eefacde25d342a2",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 44,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/07_frame_051.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "35d16e983596664936499647919055b876dc7ec07d47c3df186688f4ebb97ddf",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 51,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/08_frame_058.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "c437bcf8c37b16efb6c925d013b0dde7eee979044972a21f16337945a3a942cb",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 58,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/09_frame_066.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "558ca2527cefb9109e050e4472cc1e6721925a2c32b9487917a50f4476af1415",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 66,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/10_frame_073.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "1cf837ee49314893f4accc22c45d36beba830d96ab551466d2c7de2f4531b773",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 73,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/11_frame_080.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "c0b40f7d7af2ad031471cf93393f0442feb13dd52b0a95723ba47b8673534436",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 80,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/12_frame_087.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "71d9ebe13e5a67b71c20b8fe8b464a007fc71718d02ecdbf3530ae1b980a9db7",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 87,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/13_frame_095.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "e70b1f0e662e18248f4f9d9681720b49f64f71ddc0d62d107fdf8a85c7916cc3",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 95,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/14_frame_102.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "91e06f708d173ba8338a94f8448d87426257909eca99b641cb2aadf5f67bb7de",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 102,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/15_frame_109.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "1f3bb008e8d3bb5476d9833b6bf48150da4b0201bdc4664225af6369023e6f5b",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 109,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/16_frame_117.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "cfc68a662e404e30bd50cbb2ae3cd821cf8c42e5336565f14216890367fa5081",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 117,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/17_frame_124.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "d8e15e711c04aa94ff86cda1097743c3f1be217e83d5001c2110b5491a6f9678",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 124,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/18_frame_131.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "ac6cbc3cf0569b99e15de930d38de013e27f115fac42d3bc742b5e8fc20ffb56",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 131,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/19_frame_139.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "3aff8c721fb556f292984ba43cd7a8e4f2c065d630b5ce63f374866e9207a5de",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 139,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/20_frame_146.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "7710cc610eb7bbb9424c5282525e3079fe97e3cbc4abcbee0abec7081e7a102e",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 146,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/21_frame_153.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "9e1db662f44e9e3d58a9b8931dee633b2b2ad64ef0a2f065e0fe159889867615",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 153,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/22_frame_160.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "818c53b5d813b161565f56adcdcc3994b1e6afd8df68dc8b39fa2b265e0c9299",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 160,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/23_frame_168.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "932100a4dbf09be0d2d3cee00cd2770662f26387a53095656588836390d63bfb",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 168,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/24_frame_175.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "fff54f34ae6edd93d38572e2ea15a2acebeeb1a59b05971d69b22a19f2ff8d37",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 175,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/25_frame_182.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "5fc421cdaa949a274f393645576e28e909087ca13e1f33594b76569bbf7bf75a",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 182,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/26_frame_190.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "3de3f2f4229049ad53c300ba302cff2fc70aafdf1e1a0f77f651acdac701e608",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 190,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/27_frame_197.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "bab2e9d8d22b040705b049a1610025d9a2808e0c85c2c9104cbed024ba31b00a",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 197,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/28_frame_204.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "94c393ee1b830a1777ee8db73221846a901ab7d634a019e4fc05257728630656",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 204,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/29_frame_211.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "abbfb23b00ee8b842f68e06aaf1395e6ea3a7b26e0e96af0b7889d6d954d1346",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 211,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/30_frame_219.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "b11878d3e8ab8bd6b1ad3708d5a0c8c8bc8dd7d0ef1d7596977035d693e64f2f",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 219,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/31_frame_226.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "94c79d2ff68c3c11a20d6a0dc63f754ed264ac2298cffd84def0974b216877e2",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 226,
+        "frame_count": 30
+      }
+    }
+  ]
+}

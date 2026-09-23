@@ -1,0 +1,619 @@
+{
+  "schema_version": 1,
+  "generator_version": 1,
+  "master_seed": "0x4e50555f41565331",
+  "dataset_kind": "synthetic",
+  "source_dataset": null,
+  "derived_from_official_samples": false,
+  "design_basis": "input shapes and dtypes in this repository plus AVS stress patterns",
+  "workload": "ad01",
+  "summary": {
+    "file_count": 40,
+    "groups": {
+      "smoke": 8,
+      "stress": 32
+    }
+  },
+  "files": [
+    {
+      "path": "ad01/smoke/00_zero.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "zero",
+      "seed": "0xd1ad4dc4eecb01a1",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "8ce8ba8e726ee8925e6560d86ac35be1097691d1cfac888e6bd20e804ea9eb15"
+    },
+    {
+      "path": "ad01/smoke/01_minimum.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "minimum",
+      "seed": "0xd1ad4dc4eecb01e1",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "10755854b810aa5d73d5202a20f32938b89fb0687e92af80bf84da50ec11acd5"
+    },
+    {
+      "path": "ad01/smoke/02_maximum.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "maximum",
+      "seed": "0xd1ad4dc4eecb012d",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "71f3f0e94575685f1a2bdf9de61e7afedd35f1309b25791d3f8c7879ec1d576b"
+    },
+    {
+      "path": "ad01/smoke/03_gradient.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "gradient",
+      "seed": "0xd1ad4dc4eecb016d",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "39be853de96b97afbcd9084f9657fc4f55bc21fe5ea91be67a9a8a7edfc27943"
+    },
+    {
+      "path": "ad01/smoke/04_checker.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "checker",
+      "seed": "0xd1ad4dc4eecb00aa",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "b3aa3554a0e847ca59f556fdc5bf6faf262e19a3a79c569cee2ff4bcaaaf1d21"
+    },
+    {
+      "path": "ad01/smoke/05_impulse.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "impulse",
+      "seed": "0xd1ad4dc4eecb00e8",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "f9bf81106eab8a318b6d6d55955abf173768d0c1f144c9729443648ba02ea531"
+    },
+    {
+      "path": "ad01/smoke/06_low_random.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb002a",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "c172ef343e5166408525bbb635581810563d1fb180abe1a736852efe147bf651"
+    },
+    {
+      "path": "ad01/smoke/07_dense_random.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb006c",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "b2cc337aef2553aebc9b0d37a6a772a8fd1b6b49fc863dbae13d69fd4132e42e"
+    },
+    {
+      "path": "ad01/stress/band_spike/16_00.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31b2",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "89c6a0462be4280376be93089ea97a958812046337bffdabbf3dcc82445f6d16"
+    },
+    {
+      "path": "ad01/stress/band_spike/17_01.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31b3",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "ca7bb09658ee837b055f56483b42617ad05ad67beefd946d6ca2cb17e1149d65"
+    },
+    {
+      "path": "ad01/stress/band_spike/18_02.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31bc",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "cc9848241f58d7b7f57d0522232326502445dc7862960e4415c1fd56a0090be0"
+    },
+    {
+      "path": "ad01/stress/band_spike/19_03.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31bd",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "089e2e7b211efbda1d2114fd74ff0f32a53b1977dd918747ddb6b3b4e44d7af5"
+    },
+    {
+      "path": "ad01/stress/band_spike/20_04.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31be",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "ac67a2c8729c6ab9923a5454e54f028f941e897359c7a3214b7877e2a76d7811"
+    },
+    {
+      "path": "ad01/stress/band_spike/21_05.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31bf",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "e836c32d7a5e49ff2e3435623d967d461e05b967a0b5b03bd52194c8b19bc914"
+    },
+    {
+      "path": "ad01/stress/band_spike/22_06.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31b8",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "d85473efe3a88550434d462a3be59f747e9f310bc8f835fcbaaddf7dfee2fa22"
+    },
+    {
+      "path": "ad01/stress/band_spike/23_07.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31b9",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "3f280a2b4f8d2edd5f2fdf14ebfbe772cbdb0e9062fbe061575483ed6fca215c"
+    },
+    {
+      "path": "ad01/stress/boundary/24_00.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31f3",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "413370ee877a1322a8d3e4344f1c126933cc587320938059646a9281bb0eec74"
+    },
+    {
+      "path": "ad01/stress/boundary/25_01.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31f2",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "e88b76af558c35d7b680bb5b26d4a9ef0e4ae783e2d236ffe4273f806f37bb12"
+    },
+    {
+      "path": "ad01/stress/boundary/26_02.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31fd",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "368c25c947c95828e6ae4ccbf3485ffbc43dce98994330a7440cc15ef0be38e7"
+    },
+    {
+      "path": "ad01/stress/boundary/27_03.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31fc",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "b5043d14fd69b8a8702894f511bfc870e21e85213c5a457bafd1b54b28ea63ca"
+    },
+    {
+      "path": "ad01/stress/boundary/28_04.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31ff",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "413370ee877a1322a8d3e4344f1c126933cc587320938059646a9281bb0eec74"
+    },
+    {
+      "path": "ad01/stress/boundary/29_05.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31fe",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "e88b76af558c35d7b680bb5b26d4a9ef0e4ae783e2d236ffe4273f806f37bb12"
+    },
+    {
+      "path": "ad01/stress/boundary/30_06.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31f9",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "368c25c947c95828e6ae4ccbf3485ffbc43dce98994330a7440cc15ef0be38e7"
+    },
+    {
+      "path": "ad01/stress/boundary/31_07.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31f8",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "b5043d14fd69b8a8702894f511bfc870e21e85213c5a457bafd1b54b28ea63ca"
+    },
+    {
+      "path": "ad01/stress/dense_random/08_00.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb3171",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "d254812cad562626d3ed58c33de21c17a099ec41852e747df6e839f5f7b5db42"
+    },
+    {
+      "path": "ad01/stress/dense_random/09_01.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb3170",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "c15bbd491383e2883358992c29b2caeb156a8568fbef8c9c45661bfa0c423e8f"
+    },
+    {
+      "path": "ad01/stress/dense_random/10_02.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb317f",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "2d81ff1aad24a223123fa381650655333739e2c562d2a2a9922ea8ca3bf18554"
+    },
+    {
+      "path": "ad01/stress/dense_random/11_03.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb317e",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "69ccf2f908e83af08702bd893e2dbb32f93abe018880ec0606076c432c73d486"
+    },
+    {
+      "path": "ad01/stress/dense_random/12_04.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb317d",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "a5a1b5ab56f814aa41592d3e81043602fabdabb1434fa1053b30e4d7a18d8700"
+    },
+    {
+      "path": "ad01/stress/dense_random/13_05.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb317c",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "f08edfd7ce74110e0c0aee259d2afe9a6786ba3c4d5ab8b1849d20eb741fd513"
+    },
+    {
+      "path": "ad01/stress/dense_random/14_06.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb317b",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "5de80c3fce6ea0ed45b43d4f759a50a031692bbc2e29cbf97446da79d3cdafcd"
+    },
+    {
+      "path": "ad01/stress/dense_random/15_07.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb317a",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "5bf31d970f46b2836c49bfe02b9507cf44191c5cb3bd4b934899c753b5f6c018"
+    },
+    {
+      "path": "ad01/stress/low_random/00_00.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb3130",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "670f169fef11d4bb76a1b896063a59f33123d76a4de7fdf8d9d8512b73356b79"
+    },
+    {
+      "path": "ad01/stress/low_random/01_01.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb3131",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "1088b987ef52685d5c28b50e4d5a7af5105c6c9d9111f753241eec0075f82ddb"
+    },
+    {
+      "path": "ad01/stress/low_random/02_02.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb313e",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "7ad67230acd73c15afa091fe7dd0e743223757b4633c43b8ac9cd57d88f91eda"
+    },
+    {
+      "path": "ad01/stress/low_random/03_03.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb313f",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "6f7ac5e1ebc1c1c0a714a19e7b9b6cd5b6de47cb4de59a14e11825a95b64f483"
+    },
+    {
+      "path": "ad01/stress/low_random/04_04.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb313c",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "025327c8fe495ed7e9241504581fae723a554bf0f20ee17ea28c35c3a01f23e6"
+    },
+    {
+      "path": "ad01/stress/low_random/05_05.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb313d",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "ab3588a6cfa7de7d896814609e86c23db4c2090b2fc47d7fd7423d11d787e49e"
+    },
+    {
+      "path": "ad01/stress/low_random/06_06.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb313a",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "c34332ebfc6adcef610d8125862e7086b3056d495198cb975ec8f933658ebc43"
+    },
+    {
+      "path": "ad01/stress/low_random/07_07.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb313b",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "ff2cdaf8eb43e0dde041cd67e1b20714ad4722d1b5c6e9a2b276c320f2a86281"
+    }
+  ]
+}

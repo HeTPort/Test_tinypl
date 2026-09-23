@@ -1,0 +1,659 @@
+{
+  "schema_version": 1,
+  "generator_version": 1,
+  "master_seed": "0x4e50555f41565331",
+  "dataset_kind": "synthetic",
+  "source_dataset": null,
+  "derived_from_official_samples": false,
+  "design_basis": "input shapes and dtypes in this repository plus AVS stress patterns",
+  "workload": "ic01",
+  "summary": {
+    "file_count": 40,
+    "groups": {
+      "smoke": 8,
+      "stress": 32
+    }
+  },
+  "files": [
+    {
+      "path": "ic01/smoke/00_zero.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "zero",
+      "seed": "0xd1ad4dc4eec3d75d",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293"
+    },
+    {
+      "path": "ic01/smoke/01_minimum.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "minimum",
+      "seed": "0xd1ad4dc4eec3d20c",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293"
+    },
+    {
+      "path": "ic01/smoke/02_maximum.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "maximum",
+      "seed": "0xd1ad4dc4eec3d2cc",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "1a7493ff2f2bde5f78405d46eb01abfeaea9b0a95fa5b6cec211b05faa0cf1d3"
+    },
+    {
+      "path": "ic01/smoke/03_gradient.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "gradient",
+      "seed": "0xd1ad4dc4eec3d390",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "983557bf2ff44a7a56a366eb221a8997849ddb59eb20b0bc58d033032aee0ae6"
+    },
+    {
+      "path": "ic01/smoke/04_checker.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "checker",
+      "seed": "0xd1ad4dc4eec3d250",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "7883e0fde9a0e0179e26bb73006e4e641cba12d210adec38cca2893572c6cf4f"
+    },
+    {
+      "path": "ic01/smoke/05_impulse.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "impulse",
+      "seed": "0xd1ad4dc4eec3d115",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "b02153fa5ba6bfaf101f1dc242cc7817577694a5eaf4786b4f0df9d538b3a14a"
+    },
+    {
+      "path": "ic01/smoke/06_low_random.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec3d1d3",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "e09619d214f0dd9ed98c818d29a9b437c653954173fe2d846961eebd4006967d"
+    },
+    {
+      "path": "ic01/smoke/07_dense_random.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec3d291",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "cde2e77bd069560010d4ac8ae513d399fae2ea83a69658838d3f11be5f98ae39"
+    },
+    {
+      "path": "ic01/stress/boundary/24_00.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec383de",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "c45082f51f8d2230912995d167c4144d1b7a5fb528e6b6ea3a161a2218a4490c"
+    },
+    {
+      "path": "ic01/stress/boundary/25_01.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec383dd",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "2c9d8db66a0dfc17709ea34791b5f2beeea51f120e99d5722b3760fb98309e21"
+    },
+    {
+      "path": "ic01/stress/boundary/26_02.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec383dc",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "d8939a4711cb826104f3516e35c76bf29b51c3e906775c5567a318458e7cf70d"
+    },
+    {
+      "path": "ic01/stress/boundary/27_03.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec38323",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "90bf23fcd150a667f96e52590efeede43d6c7e319a66b58deaf2b5c1a496a753"
+    },
+    {
+      "path": "ic01/stress/boundary/28_04.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec38322",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "786ee41be2c9de8fe26c4a508c9a8759707c87234280054aaa541ae7a0088ee3"
+    },
+    {
+      "path": "ic01/stress/boundary/29_05.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec38321",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "5a5162024c3570746c9782df15f36eaa23b054d0fe8f5d79efff46951af38a80"
+    },
+    {
+      "path": "ic01/stress/boundary/30_06.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec38320",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "d8e3fdf688120388977d46dbd3a3334d381831e17750337677eccccc286056ff"
+    },
+    {
+      "path": "ic01/stress/boundary/31_07.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec38327",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "6bdf8e418473ca8a7783f377286825d1e6ba5235552583f1e81113a12a0cf1ce"
+    },
+    {
+      "path": "ic01/stress/dense_random/08_00.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec3825c",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "5a15251f21f6b03bd72fcd675bba2d91a6792d630eb0646f230cae1038a35c50"
+    },
+    {
+      "path": "ic01/stress/dense_random/09_01.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec3825f",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "11d82b9c83ba8cd1321c675d867106a29b202dfe38c109292b78a5293649288e"
+    },
+    {
+      "path": "ic01/stress/dense_random/10_02.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec3825e",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "e8f134d87587647cb450741d0c4aa0c1f99b373ae52e8139457a34fe1ce71251"
+    },
+    {
+      "path": "ic01/stress/dense_random/11_03.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec383a1",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "c92d502b578b840b9637e96bec4e5a9a7c0c343a420e29283f3b5bd81dd5449b"
+    },
+    {
+      "path": "ic01/stress/dense_random/12_04.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec383a0",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "9c4f3ffdf080dabb3b120246c0fb21d57645e88e0f3ea1b4ebc874e1049e3f43"
+    },
+    {
+      "path": "ic01/stress/dense_random/13_05.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec383a3",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "2981e3a36c8a3f1985b0fa7bb22abd20f0ffca250a20c926375117154f1fb667"
+    },
+    {
+      "path": "ic01/stress/dense_random/14_06.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec383a2",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "438b6aa96f2bbf586d62749c461a0584d419f8e388e9af6a31def870f3ce2a38"
+    },
+    {
+      "path": "ic01/stress/dense_random/15_07.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec383a5",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "3ef29c70a6ac39fc569fa2c699f60e4f29e1301c76737c829d37bb44aa7b2bea"
+    },
+    {
+      "path": "ic01/stress/low_random/00_00.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386ee",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "b874b070daf56021055e9db7a77fd7a4a1418b07d02205e847f339faaca8e37c"
+    },
+    {
+      "path": "ic01/stress/low_random/01_01.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386ef",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "8b828f73ee94a3710e6b73d3d017747e7de21030157aa46d5f2b308eb74d3fae"
+    },
+    {
+      "path": "ic01/stress/low_random/02_02.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386ec",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "e072ef73bcd6fc2d59c1ad0533008fca1d0dce7a808f181e62640bfb70bf9c96"
+    },
+    {
+      "path": "ic01/stress/low_random/03_03.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386ed",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "b9fa715d6ff90e828135fdc6a023976bedade4978f30daac25d243ee3ece0768"
+    },
+    {
+      "path": "ic01/stress/low_random/04_04.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386ea",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "f061a7fab0f88de6bb30ff1662ff283d2c9c1eec4cad47a4dda6a34ee84a8401"
+    },
+    {
+      "path": "ic01/stress/low_random/05_05.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386eb",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "c673994335c6e962f10d423c18b84a1f3e1d86884173cde3f1c7ea0481b44866"
+    },
+    {
+      "path": "ic01/stress/low_random/06_06.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386e8",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "932336fb595870b24f46fbac45e8ab4e55fd9613d291565db80e0601fb136cbb"
+    },
+    {
+      "path": "ic01/stress/low_random/07_07.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386e9",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "fa5b72e469ec848c85a0131a6c2b9f3058c1f59dbdc3fdf55f809da7fa7c9ea2"
+    },
+    {
+      "path": "ic01/stress/stripes/16_00.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec3821d",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "6f952730547e2f86fb0e6f33285cc0ae92991df0b2721d47eeaf4b6b08f76bad"
+    },
+    {
+      "path": "ic01/stress/stripes/17_01.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec3821e",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "75cd2821cd58ecae6a5b9da0a5cbadcedfea0c8f8d1f352c8f425f201c67f35d"
+    },
+    {
+      "path": "ic01/stress/stripes/18_02.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec3821f",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "3fa6fca3587a46a4ad7d59b22254276e684aa71321d7b40082caf15549307018"
+    },
+    {
+      "path": "ic01/stress/stripes/19_03.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec38260",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "8dcc18fdc3426385ee83e3dc29d16baf0af9eec6caf502e97fbddf0c50629fdc"
+    },
+    {
+      "path": "ic01/stress/stripes/20_04.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec38261",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "f80c60ecc2c17790c69467e94dfad3b1c5b065b4cc6dc6ed177d63595ad8da75"
+    },
+    {
+      "path": "ic01/stress/stripes/21_05.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec38262",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "9d6b8a77fb4fe6c78f899c210a5f1f2fcf55080e4b04f17c8f95f30af0db3745"
+    },
+    {
+      "path": "ic01/stress/stripes/22_06.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec38263",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "7f0051311aba7902b21e60acd93d36441ec49645561995c15a32039d6f181235"
+    },
+    {
+      "path": "ic01/stress/stripes/23_07.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec38264",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "1e0c58386986a688578cf20bc78dfdcee03d9e31e00cc681cfa9a01c20245e92"
+    }
+  ]
+}

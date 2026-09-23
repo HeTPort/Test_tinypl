@@ -1,0 +1,2714 @@
+{
+  "schema_version": 1,
+  "generator_version": 1,
+  "generator": "PCG-XSH-RR 64/32 with explicit integer mapping",
+  "master_seed": "0x4e50555f41565331",
+  "dataset_kind": "synthetic",
+  "source_dataset": null,
+  "derived_from_official_samples": false,
+  "design_basis": "input shapes and dtypes in this repository plus AVS stress patterns",
+  "purpose": "deterministic synthetic inputs for NPU AVS/DVFS testing",
+  "semantic_accuracy_dataset": false,
+  "workloads": {
+    "ic01": {
+      "file_count": 40,
+      "groups": {
+        "smoke": 8,
+        "stress": 32
+      }
+    },
+    "kws01": {
+      "file_count": 40,
+      "groups": {
+        "smoke": 8,
+        "stress": 32
+      }
+    },
+    "ad01": {
+      "file_count": 40,
+      "groups": {
+        "smoke": 8,
+        "stress": 32
+      }
+    },
+    "sww01": {
+      "file_count": 41,
+      "groups": {
+        "smoke": 8,
+        "stress": 32,
+        "stress_stream": 1
+      }
+    }
+  },
+  "files": [
+    {
+      "path": "ad01/smoke/00_zero.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "zero",
+      "seed": "0xd1ad4dc4eecb01a1",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "8ce8ba8e726ee8925e6560d86ac35be1097691d1cfac888e6bd20e804ea9eb15"
+    },
+    {
+      "path": "ad01/smoke/01_minimum.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "minimum",
+      "seed": "0xd1ad4dc4eecb01e1",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "10755854b810aa5d73d5202a20f32938b89fb0687e92af80bf84da50ec11acd5"
+    },
+    {
+      "path": "ad01/smoke/02_maximum.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "maximum",
+      "seed": "0xd1ad4dc4eecb012d",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "71f3f0e94575685f1a2bdf9de61e7afedd35f1309b25791d3f8c7879ec1d576b"
+    },
+    {
+      "path": "ad01/smoke/03_gradient.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "gradient",
+      "seed": "0xd1ad4dc4eecb016d",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "39be853de96b97afbcd9084f9657fc4f55bc21fe5ea91be67a9a8a7edfc27943"
+    },
+    {
+      "path": "ad01/smoke/04_checker.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "checker",
+      "seed": "0xd1ad4dc4eecb00aa",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "b3aa3554a0e847ca59f556fdc5bf6faf262e19a3a79c569cee2ff4bcaaaf1d21"
+    },
+    {
+      "path": "ad01/smoke/05_impulse.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "impulse",
+      "seed": "0xd1ad4dc4eecb00e8",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "f9bf81106eab8a318b6d6d55955abf173768d0c1f144c9729443648ba02ea531"
+    },
+    {
+      "path": "ad01/smoke/06_low_random.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb002a",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "c172ef343e5166408525bbb635581810563d1fb180abe1a736852efe147bf651"
+    },
+    {
+      "path": "ad01/smoke/07_dense_random.bin",
+      "workload": "ad01",
+      "group": "smoke",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb006c",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "b2cc337aef2553aebc9b0d37a6a772a8fd1b6b49fc863dbae13d69fd4132e42e"
+    },
+    {
+      "path": "ad01/stress/band_spike/16_00.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31b2",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "89c6a0462be4280376be93089ea97a958812046337bffdabbf3dcc82445f6d16"
+    },
+    {
+      "path": "ad01/stress/band_spike/17_01.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31b3",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "ca7bb09658ee837b055f56483b42617ad05ad67beefd946d6ca2cb17e1149d65"
+    },
+    {
+      "path": "ad01/stress/band_spike/18_02.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31bc",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "cc9848241f58d7b7f57d0522232326502445dc7862960e4415c1fd56a0090be0"
+    },
+    {
+      "path": "ad01/stress/band_spike/19_03.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31bd",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "089e2e7b211efbda1d2114fd74ff0f32a53b1977dd918747ddb6b3b4e44d7af5"
+    },
+    {
+      "path": "ad01/stress/band_spike/20_04.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31be",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "ac67a2c8729c6ab9923a5454e54f028f941e897359c7a3214b7877e2a76d7811"
+    },
+    {
+      "path": "ad01/stress/band_spike/21_05.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31bf",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "e836c32d7a5e49ff2e3435623d967d461e05b967a0b5b03bd52194c8b19bc914"
+    },
+    {
+      "path": "ad01/stress/band_spike/22_06.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31b8",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "d85473efe3a88550434d462a3be59f747e9f310bc8f835fcbaaddf7dfee2fa22"
+    },
+    {
+      "path": "ad01/stress/band_spike/23_07.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "band_spike",
+      "seed": "0xd1ad4dc4eecb31b9",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "3f280a2b4f8d2edd5f2fdf14ebfbe772cbdb0e9062fbe061575483ed6fca215c"
+    },
+    {
+      "path": "ad01/stress/boundary/24_00.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31f3",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "413370ee877a1322a8d3e4344f1c126933cc587320938059646a9281bb0eec74"
+    },
+    {
+      "path": "ad01/stress/boundary/25_01.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31f2",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "e88b76af558c35d7b680bb5b26d4a9ef0e4ae783e2d236ffe4273f806f37bb12"
+    },
+    {
+      "path": "ad01/stress/boundary/26_02.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31fd",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "368c25c947c95828e6ae4ccbf3485ffbc43dce98994330a7440cc15ef0be38e7"
+    },
+    {
+      "path": "ad01/stress/boundary/27_03.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31fc",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "b5043d14fd69b8a8702894f511bfc870e21e85213c5a457bafd1b54b28ea63ca"
+    },
+    {
+      "path": "ad01/stress/boundary/28_04.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31ff",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "413370ee877a1322a8d3e4344f1c126933cc587320938059646a9281bb0eec74"
+    },
+    {
+      "path": "ad01/stress/boundary/29_05.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31fe",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "e88b76af558c35d7b680bb5b26d4a9ef0e4ae783e2d236ffe4273f806f37bb12"
+    },
+    {
+      "path": "ad01/stress/boundary/30_06.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31f9",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "368c25c947c95828e6ae4ccbf3485ffbc43dce98994330a7440cc15ef0be38e7"
+    },
+    {
+      "path": "ad01/stress/boundary/31_07.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecb31f8",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "b5043d14fd69b8a8702894f511bfc870e21e85213c5a457bafd1b54b28ea63ca"
+    },
+    {
+      "path": "ad01/stress/dense_random/08_00.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb3171",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "d254812cad562626d3ed58c33de21c17a099ec41852e747df6e839f5f7b5db42"
+    },
+    {
+      "path": "ad01/stress/dense_random/09_01.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb3170",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "c15bbd491383e2883358992c29b2caeb156a8568fbef8c9c45661bfa0c423e8f"
+    },
+    {
+      "path": "ad01/stress/dense_random/10_02.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb317f",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "2d81ff1aad24a223123fa381650655333739e2c562d2a2a9922ea8ca3bf18554"
+    },
+    {
+      "path": "ad01/stress/dense_random/11_03.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb317e",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "69ccf2f908e83af08702bd893e2dbb32f93abe018880ec0606076c432c73d486"
+    },
+    {
+      "path": "ad01/stress/dense_random/12_04.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb317d",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "a5a1b5ab56f814aa41592d3e81043602fabdabb1434fa1053b30e4d7a18d8700"
+    },
+    {
+      "path": "ad01/stress/dense_random/13_05.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb317c",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "f08edfd7ce74110e0c0aee259d2afe9a6786ba3c4d5ab8b1849d20eb741fd513"
+    },
+    {
+      "path": "ad01/stress/dense_random/14_06.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb317b",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "5de80c3fce6ea0ed45b43d4f759a50a031692bbc2e29cbf97446da79d3cdafcd"
+    },
+    {
+      "path": "ad01/stress/dense_random/15_07.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecb317a",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "5bf31d970f46b2836c49bfe02b9507cf44191c5cb3bd4b934899c753b5f6c018"
+    },
+    {
+      "path": "ad01/stress/low_random/00_00.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb3130",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "670f169fef11d4bb76a1b896063a59f33123d76a4de7fdf8d9d8512b73356b79"
+    },
+    {
+      "path": "ad01/stress/low_random/01_01.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb3131",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "1088b987ef52685d5c28b50e4d5a7af5105c6c9d9111f753241eec0075f82ddb"
+    },
+    {
+      "path": "ad01/stress/low_random/02_02.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb313e",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "7ad67230acd73c15afa091fe7dd0e743223757b4633c43b8ac9cd57d88f91eda"
+    },
+    {
+      "path": "ad01/stress/low_random/03_03.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb313f",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "6f7ac5e1ebc1c1c0a714a19e7b9b6cd5b6de47cb4de59a14e11825a95b64f483"
+    },
+    {
+      "path": "ad01/stress/low_random/04_04.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb313c",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "025327c8fe495ed7e9241504581fae723a554bf0f20ee17ea28c35c3a01f23e6"
+    },
+    {
+      "path": "ad01/stress/low_random/05_05.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb313d",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "ab3588a6cfa7de7d896814609e86c23db4c2090b2fc47d7fd7423d11d787e49e"
+    },
+    {
+      "path": "ad01/stress/low_random/06_06.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb313a",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "c34332ebfc6adcef610d8125862e7086b3056d495198cb975ec8f933658ebc43"
+    },
+    {
+      "path": "ad01/stress/low_random/07_07.bin",
+      "workload": "ad01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecb313b",
+      "dtype": "float32",
+      "shape": [
+        5,
+        128
+      ],
+      "byte_order": "little",
+      "bytes": 2560,
+      "sha256": "ff2cdaf8eb43e0dde041cd67e1b20714ad4722d1b5c6e9a2b276c320f2a86281"
+    },
+    {
+      "path": "ic01/smoke/00_zero.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "zero",
+      "seed": "0xd1ad4dc4eec3d75d",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293"
+    },
+    {
+      "path": "ic01/smoke/01_minimum.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "minimum",
+      "seed": "0xd1ad4dc4eec3d20c",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293"
+    },
+    {
+      "path": "ic01/smoke/02_maximum.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "maximum",
+      "seed": "0xd1ad4dc4eec3d2cc",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "1a7493ff2f2bde5f78405d46eb01abfeaea9b0a95fa5b6cec211b05faa0cf1d3"
+    },
+    {
+      "path": "ic01/smoke/03_gradient.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "gradient",
+      "seed": "0xd1ad4dc4eec3d390",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "983557bf2ff44a7a56a366eb221a8997849ddb59eb20b0bc58d033032aee0ae6"
+    },
+    {
+      "path": "ic01/smoke/04_checker.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "checker",
+      "seed": "0xd1ad4dc4eec3d250",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "7883e0fde9a0e0179e26bb73006e4e641cba12d210adec38cca2893572c6cf4f"
+    },
+    {
+      "path": "ic01/smoke/05_impulse.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "impulse",
+      "seed": "0xd1ad4dc4eec3d115",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "b02153fa5ba6bfaf101f1dc242cc7817577694a5eaf4786b4f0df9d538b3a14a"
+    },
+    {
+      "path": "ic01/smoke/06_low_random.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec3d1d3",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "e09619d214f0dd9ed98c818d29a9b437c653954173fe2d846961eebd4006967d"
+    },
+    {
+      "path": "ic01/smoke/07_dense_random.bin",
+      "workload": "ic01",
+      "group": "smoke",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec3d291",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "cde2e77bd069560010d4ac8ae513d399fae2ea83a69658838d3f11be5f98ae39"
+    },
+    {
+      "path": "ic01/stress/boundary/24_00.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec383de",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "c45082f51f8d2230912995d167c4144d1b7a5fb528e6b6ea3a161a2218a4490c"
+    },
+    {
+      "path": "ic01/stress/boundary/25_01.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec383dd",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "2c9d8db66a0dfc17709ea34791b5f2beeea51f120e99d5722b3760fb98309e21"
+    },
+    {
+      "path": "ic01/stress/boundary/26_02.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec383dc",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "d8939a4711cb826104f3516e35c76bf29b51c3e906775c5567a318458e7cf70d"
+    },
+    {
+      "path": "ic01/stress/boundary/27_03.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec38323",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "90bf23fcd150a667f96e52590efeede43d6c7e319a66b58deaf2b5c1a496a753"
+    },
+    {
+      "path": "ic01/stress/boundary/28_04.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec38322",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "786ee41be2c9de8fe26c4a508c9a8759707c87234280054aaa541ae7a0088ee3"
+    },
+    {
+      "path": "ic01/stress/boundary/29_05.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec38321",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "5a5162024c3570746c9782df15f36eaa23b054d0fe8f5d79efff46951af38a80"
+    },
+    {
+      "path": "ic01/stress/boundary/30_06.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec38320",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "d8e3fdf688120388977d46dbd3a3334d381831e17750337677eccccc286056ff"
+    },
+    {
+      "path": "ic01/stress/boundary/31_07.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eec38327",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "6bdf8e418473ca8a7783f377286825d1e6ba5235552583f1e81113a12a0cf1ce"
+    },
+    {
+      "path": "ic01/stress/dense_random/08_00.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec3825c",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "5a15251f21f6b03bd72fcd675bba2d91a6792d630eb0646f230cae1038a35c50"
+    },
+    {
+      "path": "ic01/stress/dense_random/09_01.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec3825f",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "11d82b9c83ba8cd1321c675d867106a29b202dfe38c109292b78a5293649288e"
+    },
+    {
+      "path": "ic01/stress/dense_random/10_02.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec3825e",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "e8f134d87587647cb450741d0c4aa0c1f99b373ae52e8139457a34fe1ce71251"
+    },
+    {
+      "path": "ic01/stress/dense_random/11_03.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec383a1",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "c92d502b578b840b9637e96bec4e5a9a7c0c343a420e29283f3b5bd81dd5449b"
+    },
+    {
+      "path": "ic01/stress/dense_random/12_04.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec383a0",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "9c4f3ffdf080dabb3b120246c0fb21d57645e88e0f3ea1b4ebc874e1049e3f43"
+    },
+    {
+      "path": "ic01/stress/dense_random/13_05.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec383a3",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "2981e3a36c8a3f1985b0fa7bb22abd20f0ffca250a20c926375117154f1fb667"
+    },
+    {
+      "path": "ic01/stress/dense_random/14_06.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec383a2",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "438b6aa96f2bbf586d62749c461a0584d419f8e388e9af6a31def870f3ce2a38"
+    },
+    {
+      "path": "ic01/stress/dense_random/15_07.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eec383a5",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "3ef29c70a6ac39fc569fa2c699f60e4f29e1301c76737c829d37bb44aa7b2bea"
+    },
+    {
+      "path": "ic01/stress/low_random/00_00.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386ee",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "b874b070daf56021055e9db7a77fd7a4a1418b07d02205e847f339faaca8e37c"
+    },
+    {
+      "path": "ic01/stress/low_random/01_01.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386ef",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "8b828f73ee94a3710e6b73d3d017747e7de21030157aa46d5f2b308eb74d3fae"
+    },
+    {
+      "path": "ic01/stress/low_random/02_02.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386ec",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "e072ef73bcd6fc2d59c1ad0533008fca1d0dce7a808f181e62640bfb70bf9c96"
+    },
+    {
+      "path": "ic01/stress/low_random/03_03.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386ed",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "b9fa715d6ff90e828135fdc6a023976bedade4978f30daac25d243ee3ece0768"
+    },
+    {
+      "path": "ic01/stress/low_random/04_04.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386ea",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "f061a7fab0f88de6bb30ff1662ff283d2c9c1eec4cad47a4dda6a34ee84a8401"
+    },
+    {
+      "path": "ic01/stress/low_random/05_05.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386eb",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "c673994335c6e962f10d423c18b84a1f3e1d86884173cde3f1c7ea0481b44866"
+    },
+    {
+      "path": "ic01/stress/low_random/06_06.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386e8",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "932336fb595870b24f46fbac45e8ab4e55fd9613d291565db80e0601fb136cbb"
+    },
+    {
+      "path": "ic01/stress/low_random/07_07.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eec386e9",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "fa5b72e469ec848c85a0131a6c2b9f3058c1f59dbdc3fdf55f809da7fa7c9ea2"
+    },
+    {
+      "path": "ic01/stress/stripes/16_00.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec3821d",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "6f952730547e2f86fb0e6f33285cc0ae92991df0b2721d47eeaf4b6b08f76bad"
+    },
+    {
+      "path": "ic01/stress/stripes/17_01.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec3821e",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "75cd2821cd58ecae6a5b9da0a5cbadcedfea0c8f8d1f352c8f425f201c67f35d"
+    },
+    {
+      "path": "ic01/stress/stripes/18_02.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec3821f",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "3fa6fca3587a46a4ad7d59b22254276e684aa71321d7b40082caf15549307018"
+    },
+    {
+      "path": "ic01/stress/stripes/19_03.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec38260",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "8dcc18fdc3426385ee83e3dc29d16baf0af9eec6caf502e97fbddf0c50629fdc"
+    },
+    {
+      "path": "ic01/stress/stripes/20_04.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec38261",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "f80c60ecc2c17790c69467e94dfad3b1c5b065b4cc6dc6ed177d63595ad8da75"
+    },
+    {
+      "path": "ic01/stress/stripes/21_05.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec38262",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "9d6b8a77fb4fe6c78f899c210a5f1f2fcf55080e4b04f17c8f95f30af0db3745"
+    },
+    {
+      "path": "ic01/stress/stripes/22_06.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec38263",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "7f0051311aba7902b21e60acd93d36441ec49645561995c15a32039d6f181235"
+    },
+    {
+      "path": "ic01/stress/stripes/23_07.bin",
+      "workload": "ic01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eec38264",
+      "dtype": "uint8",
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 3072,
+      "sha256": "1e0c58386986a688578cf20bc78dfdcee03d9e31e00cc681cfa9a01c20245e92"
+    },
+    {
+      "path": "kws01/smoke/00_zero.bin",
+      "workload": "kws01",
+      "group": "smoke",
+      "pattern": "zero",
+      "seed": "0xd1ad4dc4eecff8b0",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "2a673f683c99c311b1f2dd2d94e1545ebbbdab96daa5a16a334194f7aca7a603"
+    },
+    {
+      "path": "kws01/smoke/01_minimum.bin",
+      "workload": "kws01",
+      "group": "smoke",
+      "pattern": "minimum",
+      "seed": "0xd1ad4dc4eecffaf9",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "be796ffeced0cc5061bf66ff90f523680b3a9b47c68a806454f76fd1826e8419"
+    },
+    {
+      "path": "kws01/smoke/02_maximum.bin",
+      "workload": "kws01",
+      "group": "smoke",
+      "pattern": "maximum",
+      "seed": "0xd1ad4dc4eecffa39",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "238d789a76a8acdcd1a75459d5d329216ed27deaaee323b5bf9a46723eb1e58d"
+    },
+    {
+      "path": "kws01/smoke/03_gradient.bin",
+      "workload": "kws01",
+      "group": "smoke",
+      "pattern": "gradient",
+      "seed": "0xd1ad4dc4eecffa7d",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "516285c0bd8f5a96cd146c9d1a4f606512d5862c19930a592aabef42e134c445"
+    },
+    {
+      "path": "kws01/smoke/04_checker.bin",
+      "workload": "kws01",
+      "group": "smoke",
+      "pattern": "checker",
+      "seed": "0xd1ad4dc4eecffbbd",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "4e4d0f8fad50a32741cc1656d39cf7a4cdd5d3ef528530043fd974e6f4cbe7af"
+    },
+    {
+      "path": "kws01/smoke/05_impulse.bin",
+      "workload": "kws01",
+      "group": "smoke",
+      "pattern": "impulse",
+      "seed": "0xd1ad4dc4eecff9f8",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "b6119e9f094f0516e538366741068e774163dbc86c595fe0c790fefdfeb5b674"
+    },
+    {
+      "path": "kws01/smoke/06_low_random.bin",
+      "workload": "kws01",
+      "group": "smoke",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecff926",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "3b50f72f4d8a330beb84bdacf109f46e9e02e0add58b2d0c39df39721d9897eb"
+    },
+    {
+      "path": "kws01/smoke/07_dense_random.bin",
+      "workload": "kws01",
+      "group": "smoke",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecff964",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "7b37b6d32df0c3ea41ac58bb1091fa63dc3201e66840ed7ae60716808fe4ae4d"
+    },
+    {
+      "path": "kws01/stress/boundary/24_00.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecf8bab",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "2d17f398e7376d181cd0c88d2343159993465cee396703286db23d56b9454cb7"
+    },
+    {
+      "path": "kws01/stress/boundary/25_01.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecf8ba8",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "f6df1d3d504dffc4202829a396724d58cf600f391c95517f16ae7c06d8e0634a"
+    },
+    {
+      "path": "kws01/stress/boundary/26_02.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecf8ba9",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "6d5e6ebbd50a5e6314722891a60b64e82f80ef7ac3ae52fbfb91262dfd73640b"
+    },
+    {
+      "path": "kws01/stress/boundary/27_03.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecf8bae",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "46ca0f1acf98e7042f88b80c6eacab791c7e97891e9abe1b8fe6681efb3a4d32"
+    },
+    {
+      "path": "kws01/stress/boundary/28_04.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecf8baf",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "88cd386f156ca5c61faffbbc61ec0ca28933add05cbed40a907d1313a91a69ad"
+    },
+    {
+      "path": "kws01/stress/boundary/29_05.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecf8bac",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "c75e545a1625f13ea413a565f5a7b6ae01ed95d412acd00a9f3ece22b7bc900a"
+    },
+    {
+      "path": "kws01/stress/boundary/30_06.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecf8bad",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "78c5dc9d8d1c4a706e37a63df4e2f7d9f4dc066069f95fcb65068bedc592944d"
+    },
+    {
+      "path": "kws01/stress/boundary/31_07.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "boundary",
+      "seed": "0xd1ad4dc4eecf8bd2",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "405c078e231546bd0d358ffce518161d376d519a35abd5c59e21f5145a1791e0"
+    },
+    {
+      "path": "kws01/stress/dense_random/08_00.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecf8a29",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "7d083389b4bb80a70312f93cdaa66b136be1edd13a88859a8b7399dd9ce511e2"
+    },
+    {
+      "path": "kws01/stress/dense_random/09_01.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecf8a2a",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "f68754dfa00c352c9b4881c380f57b0536ba995a5796a702f6940f07d4f794ac"
+    },
+    {
+      "path": "kws01/stress/dense_random/10_02.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecf8a2b",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "4960063a074ea6a8a9f4d12634e358a818ca99a84d51017c869d1470ac7924ce"
+    },
+    {
+      "path": "kws01/stress/dense_random/11_03.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecf8a2c",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "9cea48e4b20b18c40349ef401673e8f929883ff759393db51d14ebbe55554784"
+    },
+    {
+      "path": "kws01/stress/dense_random/12_04.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecf8a2d",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "509ffbdf491041e3b1229cac20821264bd3013d03ea2dc94c87e1a76c3425eed"
+    },
+    {
+      "path": "kws01/stress/dense_random/13_05.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecf8a2e",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "9271ef36eed2e9073ea2f0394dffd805c14918a2cf9be22cc2ee46f83c9e946e"
+    },
+    {
+      "path": "kws01/stress/dense_random/14_06.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecf8a2f",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "e2312f153afb5b6919d2994a35e643995eba21cb678c09b671a947511539e4a3"
+    },
+    {
+      "path": "kws01/stress/dense_random/15_07.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4eecf8a50",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "0af6e43770ac5ffe6b7bb9b2aa190ae155514f08237e7e70b1c4e5d05002bc8f"
+    },
+    {
+      "path": "kws01/stress/low_random/00_00.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecf8ee3",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "b9acaa50ab2aa86d8bf78da0bc2a8e459ddc60725bc15968a6d456d8f4820056"
+    },
+    {
+      "path": "kws01/stress/low_random/01_01.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecf8ee2",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "638a8307047d16c73090a18642e3a813877c08bcc97b54321dc3d246ea8ffbda"
+    },
+    {
+      "path": "kws01/stress/low_random/02_02.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecf8ee1",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "5a5c1c0d42eb4a0975f4389146e5c67db591836bdbc8f6246018e3286b7f0750"
+    },
+    {
+      "path": "kws01/stress/low_random/03_03.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecf8ee0",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "84ca5c9985212487dc5ccd3fe0f9a3afb5d1698edf4c7b8a289c4b45a7991201"
+    },
+    {
+      "path": "kws01/stress/low_random/04_04.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecf8e1f",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "69284bdc346bc34bc404e3fb575b928f632493e0c30ef0ca5ba22de13d2e3bc9"
+    },
+    {
+      "path": "kws01/stress/low_random/05_05.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecf8e1e",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "4d863a6f61dc106820509c98647ffe882c6d5132af3730f4cbf22330154cf38e"
+    },
+    {
+      "path": "kws01/stress/low_random/06_06.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecf8e1d",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "0c7d0480ecb4c397646490940ab93f23fe6e289c67b74c209a4c94fea821a5f9"
+    },
+    {
+      "path": "kws01/stress/low_random/07_07.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4eecf8e1c",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "c36d585a73a8099243752c27a4bd14bffc26a3f39fbc888434e2ea84f5c074d5"
+    },
+    {
+      "path": "kws01/stress/stripes/16_00.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eecf8a68",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "f8aacb29d7b219aaeb4f5780296fa4209087a9232920e2cf73f137d729b6a850"
+    },
+    {
+      "path": "kws01/stress/stripes/17_01.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eecf8a6b",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "ac7cb404f92815c3267d593a4a4c4121dd46efdc19227e5534a9c18472a58d5c"
+    },
+    {
+      "path": "kws01/stress/stripes/18_02.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eecf8a6a",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "64800d55294ce266f53054d02784634770ef521d5d521c59b0f892f89478a875"
+    },
+    {
+      "path": "kws01/stress/stripes/19_03.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eecf8a6d",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "552b90dfcbe53e858864611b1c8ca4e65b51c640e7abee22163a7ef4fae65ee8"
+    },
+    {
+      "path": "kws01/stress/stripes/20_04.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eecf8a6c",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "6606e7422c011280697262253f40f2ee59d8416db3566d25b4a6118f1a8341cd"
+    },
+    {
+      "path": "kws01/stress/stripes/21_05.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eecf8a6f",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "68f110c7e8039f89270edd5d30273825fd6be8c70cdc0d53a6de10316a6f2a1f"
+    },
+    {
+      "path": "kws01/stress/stripes/22_06.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eecf8a6e",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "777466a9457f4392ad7efb74a67ad0b8ac57d1cb92177c483ac13b4bd9cd71a7"
+    },
+    {
+      "path": "kws01/stress/stripes/23_07.bin",
+      "workload": "kws01",
+      "group": "stress",
+      "pattern": "stripes",
+      "seed": "0xd1ad4dc4eecf8b91",
+      "dtype": "int8",
+      "shape": [
+        49,
+        10,
+        1
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 490,
+      "sha256": "285b2800f569b845fca22a12a71263f23a7a4fe8c4a42c6aad646b6e41fe3e53"
+    },
+    {
+      "path": "sww01/smoke/00_zero.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "zero",
+      "seed": "0xd1ad4dc4ed372974",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "655a3ef0465a9f30fddf25f4dde0c19a05c6f9069b83961800c1944165955273"
+    },
+    {
+      "path": "sww01/smoke/01_minimum.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "minimum",
+      "seed": "0xd1ad4dc4ed372ab4",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "7a79fb2433ddc3295776027d2534543dfb0bc2653bd56b63b74dfe4921337c67"
+    },
+    {
+      "path": "sww01/smoke/02_maximum.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "maximum",
+      "seed": "0xd1ad4dc4ed3729f0",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "c5a2ad4b32c2852d7cf588ebd5381dd9e1209563bea8221f60f4cff091c4398a"
+    },
+    {
+      "path": "sww01/smoke/03_gradient.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "gradient",
+      "seed": "0xd1ad4dc4ed372930",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "9fad2e88fbc04d908cefc6500123544db433897f1bf79af4ad8e80e2749b2f27"
+    },
+    {
+      "path": "sww01/smoke/04_checker.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "checker",
+      "seed": "0xd1ad4dc4ed372877",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "0d6dc933c61f9d332ec43bbb76856bc1f1baa23abf54e617f322b95e2011f8bf"
+    },
+    {
+      "path": "sww01/smoke/05_impulse.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "impulse",
+      "seed": "0xd1ad4dc4ed3729b5",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "c2f922dc0fae90589a8f2b4579452b229e392d5c592c3ea1e291197af52f2b5b"
+    },
+    {
+      "path": "sww01/smoke/06_low_random.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "low_random",
+      "seed": "0xd1ad4dc4ed3728f7",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "a56e8424b36fa289185b07ccb2cdc03a3fb3ea525efce6ac2b533f8845ecb3ea"
+    },
+    {
+      "path": "sww01/smoke/07_dense_random.bin",
+      "workload": "sww01",
+      "group": "smoke",
+      "pattern": "dense_random",
+      "seed": "0xd1ad4dc4ed372839",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "25518006bfefe89fbbe89725c78ee366a9845a6ce327b0225f5f1864bdf9684b"
+    },
+    {
+      "path": "sww01/stress/stream_features_256x40_int8.bin",
+      "workload": "sww01",
+      "group": "stress_stream",
+      "pattern": "four_64_frame_segments",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        256,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 10240,
+      "sha256": "6e3cbc09645c15d60d3d12706e6e864fe8e937d6cbe909121ceeefc081c7fc2a",
+      "source": {
+        "segments": [
+          "low_random",
+          "banded",
+          "pulsed",
+          "dense_random"
+        ],
+        "segment_seeds": [
+          "0xd1ad4dc4ed378e5b",
+          "0xd1ad4dc4ed378a91",
+          "0xd1ad4dc4ed378ad0",
+          "0xd1ad4dc4ed378b13"
+        ]
+      }
+    },
+    {
+      "path": "sww01/stress/windows/00_frame_000.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "999ad816ede38b8439b405bb4edd2669612e1df882b94167166ed4421b7dbb71",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 0,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/01_frame_007.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "85a9605969f5f1a3a870a1c914301e051a2362993b5e6cf03d552ee8917d8bcc",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 7,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/02_frame_015.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "4ec783e622d9246663f6741ba32b7546fb149f8861ef2a55588473275d428bdb",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 15,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/03_frame_022.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "df0830223d760d6a8e3c95d5d9c457514b50f3a91ed218903dd7f2d9a591bbb4",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 22,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/04_frame_029.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "fed583ef94aca299b034bc1bd89b201445c1df107a39c2d2a08bcec2bdf45cd6",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 29,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/05_frame_036.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "399eb2e10019eea2a5e423e6040ab750c63cd8c79385080d91b694095f287a8d",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 36,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/06_frame_044.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "e26b639e2b4c89737cebe274f0916747bf699b8462f072518eefacde25d342a2",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 44,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/07_frame_051.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "35d16e983596664936499647919055b876dc7ec07d47c3df186688f4ebb97ddf",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 51,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/08_frame_058.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "c437bcf8c37b16efb6c925d013b0dde7eee979044972a21f16337945a3a942cb",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 58,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/09_frame_066.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "558ca2527cefb9109e050e4472cc1e6721925a2c32b9487917a50f4476af1415",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 66,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/10_frame_073.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "1cf837ee49314893f4accc22c45d36beba830d96ab551466d2c7de2f4531b773",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 73,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/11_frame_080.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "c0b40f7d7af2ad031471cf93393f0442feb13dd52b0a95723ba47b8673534436",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 80,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/12_frame_087.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "71d9ebe13e5a67b71c20b8fe8b464a007fc71718d02ecdbf3530ae1b980a9db7",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 87,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/13_frame_095.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "e70b1f0e662e18248f4f9d9681720b49f64f71ddc0d62d107fdf8a85c7916cc3",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 95,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/14_frame_102.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "91e06f708d173ba8338a94f8448d87426257909eca99b641cb2aadf5f67bb7de",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 102,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/15_frame_109.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "1f3bb008e8d3bb5476d9833b6bf48150da4b0201bdc4664225af6369023e6f5b",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 109,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/16_frame_117.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "cfc68a662e404e30bd50cbb2ae3cd821cf8c42e5336565f14216890367fa5081",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 117,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/17_frame_124.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "d8e15e711c04aa94ff86cda1097743c3f1be217e83d5001c2110b5491a6f9678",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 124,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/18_frame_131.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "ac6cbc3cf0569b99e15de930d38de013e27f115fac42d3bc742b5e8fc20ffb56",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 131,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/19_frame_139.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "3aff8c721fb556f292984ba43cd7a8e4f2c065d630b5ce63f374866e9207a5de",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 139,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/20_frame_146.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "7710cc610eb7bbb9424c5282525e3079fe97e3cbc4abcbee0abec7081e7a102e",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 146,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/21_frame_153.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "9e1db662f44e9e3d58a9b8931dee633b2b2ad64ef0a2f065e0fe159889867615",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 153,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/22_frame_160.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "818c53b5d813b161565f56adcdcc3994b1e6afd8df68dc8b39fa2b265e0c9299",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 160,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/23_frame_168.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "932100a4dbf09be0d2d3cee00cd2770662f26387a53095656588836390d63bfb",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 168,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/24_frame_175.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "fff54f34ae6edd93d38572e2ea15a2acebeeb1a59b05971d69b22a19f2ff8d37",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 175,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/25_frame_182.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "5fc421cdaa949a274f393645576e28e909087ca13e1f33594b76569bbf7bf75a",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 182,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/26_frame_190.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "3de3f2f4229049ad53c300ba302cff2fc70aafdf1e1a0f77f651acdac701e608",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 190,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/27_frame_197.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "bab2e9d8d22b040705b049a1610025d9a2808e0c85c2c9104cbed024ba31b00a",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 197,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/28_frame_204.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "94c393ee1b830a1777ee8db73221846a901ab7d634a019e4fc05257728630656",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 204,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/29_frame_211.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "abbfb23b00ee8b842f68e06aaf1395e6ea3a7b26e0e96af0b7889d6d954d1346",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 211,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/30_frame_219.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "b11878d3e8ab8bd6b1ad3708d5a0c8c8bc8dd7d0ef1d7596977035d693e64f2f",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 219,
+        "frame_count": 30
+      }
+    },
+    {
+      "path": "sww01/stress/windows/31_frame_226.bin",
+      "workload": "sww01",
+      "group": "stress",
+      "pattern": "stream_window",
+      "seed": "0x4e50555f41565331",
+      "dtype": "int8",
+      "shape": [
+        30,
+        40
+      ],
+      "byte_order": "not_applicable",
+      "bytes": 1200,
+      "sha256": "94c79d2ff68c3c11a20d6a0dc63f754ed264ac2298cffd84def0974b216877e2",
+      "source": {
+        "stream": "sww01/stress/stream_features_256x40_int8.bin",
+        "start_frame": 226,
+        "frame_count": 30
+      }
+    }
+  ]
+}
